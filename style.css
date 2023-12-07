@@ -1,0 +1,127 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	list-style:none;
+	text-decoration:none;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+body{
+/* 	background:red; */
+}
+
+
+
+header{
+    height: 150px;
+    background: dodgerblue;
+    text-align: center;
+    padding: 60px;	
+}header h1{
+    text-shadow: 0 3px 0 #ff0000;	
+}
+section{
+	padding:30px 15px;
+    background: #eee;
+    display: grid; 
+	grid-template-columns: repeat(auto-fill,minmax(250px ,1fr));
+	gap:10px;
+}
+
+section > div{
+    background: #fff;
+    padding: 10px 0 30px;
+    text-align: center;
+    box-shadow: 0 0 3px 0 #000;
+	transition: 1s;
+}
+section > div:hover{
+    background: #ccc;	
+}
+section > div h3{
+    margin: 20px 0;	
+}
+section > div a{
+	
+}
+footer{
+    background: #000000bf;
+    height: 300px;
+    position: relative;	
+}
+footer nav{
+	width:100%;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer p{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+    text-shadow: 0 3px 0 #ff0000;	
+}
+
+footer  a i{
+ font-size: 50px;
+}
+ footer  .inst{
+     color: #f321dd;
+ 
+}
+footer  .snap{
+     color: #ffeb3b;
+ 
+}
+ footer  .x-twi{
+    color: #2196f3;
+  
+}
+ footer  .git{
+    color: #000;
+ 
+}
+ footer  .yout{
+    color: #ff0000;
+    
+}
+
+@media(max-width:667px){
+	section{
+	grid-template-columns: 1fr;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
